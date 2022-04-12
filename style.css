@@ -1,0 +1,129 @@
+*{margin:0;padding:0;box-sizing: border-box;font-family: 'Lato', sans-serif;}
+
+/* body, html{
+  height: 100%;
+} */
+
+header{
+  padding: 40px 2%;
+  animation-name: color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+header i{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+@keyframes color{
+    0%   {background-color:rgb(177, 96, 218);}
+    50%  {background-color:rgb(68, 201, 174);}
+    100% {background-color:rgb(36, 133, 197);}
+}
+
+.divider-1 {
+  height: 2px;
+  background: linear-gradient(217deg, rgba(0, 255, 0, 0.8), rgba(255,0,0,0) 70.071%)
+}
+
+.divider-2 {
+  height: 2px;
+  background: linear-gradient(-217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.071%)
+}
+
+.player-options img,
+.enemy-options img
+{
+    margin-top: 30px;
+    max-width: 150px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.player-options img{
+  position: relative;
+}
+
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.align h2{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.align{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.validate-message h2{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  font-size: 50px;
+  color:rgb(191, 251, 237);
+  font-weight: bold;
+  z-index: 2;
+}
+
+footer{
+  padding: 40px 2%;
+  background-color:rgb(127, 40, 171);
+}
+
+footer h2{
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+}
+
+footer h2 b{
+  color:rgb(85, 227, 199);
+}
+
+@media screen and (max-width: 768px) {
+  header h1{
+    font-size: 25px;
+  }
+
+.validate-message h2{
+  font-size: 30px;
+  top: 20px;
+}
+
+
+
+.player-options img,
+.enemy-options img{
+    margin-top: 40px;
+    max-width: 100px;
+}
+
+}
